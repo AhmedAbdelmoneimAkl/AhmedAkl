@@ -1,24 +1,17 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
+    background-color: #f4f4f4;
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
 header {
     background-color: #007bff;
+    padding: 20px;
     color: white;
-    padding: 1rem 0;
     text-align: center;
 }
-.profile-photo {
-    width: 200px;
-    height: auto;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 20px;
-}
-
 
 nav ul {
     list-style: none;
@@ -26,8 +19,8 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 0 15px;
+    display: inline;
+    margin-right: 20px;
 }
 
 nav ul li a {
@@ -35,33 +28,54 @@ nav ul li a {
     text-decoration: none;
 }
 
-h1, h2 {
-    color: #343a40;
+.section {
+    padding: 50px 0;
 }
 
-.main-content {
-    padding: 2rem;
-    text-align: center;
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.cv-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .cv-card {
     background-color: white;
     padding: 20px;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 8px;
 }
 
 .cv-card h3 {
-    color: #007bff;
+    margin-bottom: 10px;
 }
 
 .btn {
+    display: inline-block;
+    padding: 10px 20px;
     background-color: #007bff;
     color: white;
-    padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
@@ -69,11 +83,8 @@ h1, h2 {
 }
 
 footer {
-    background-color: #343a40;
+    background-color: #333;
     color: white;
-    text-align: center;
     padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    text-align: center;
 }
